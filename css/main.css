@@ -47,7 +47,7 @@ h4 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin: 8px 0px 8px 0px;
+    margin: 0px 0px 32px 0px;
 }
 
 h5 {
@@ -83,26 +83,6 @@ h6 {
   margin: 8px 0px 8px 0px;
 }
 
-.product_content_box {
-  display: flex;
-}
-
-.product_content_box div {
-  flex-basis: 0;
-  flex-grow: 1;
-}
-.product_content{
-margin: 0px 48px 0px 32px;
-}
-
-.product_picture{
-  background-image: linear-gradient(#fcce00, transparent); 
-}
-
-.product_picture img{
-  mix-blend-mode: darken;
-}
-
 .rectangle_latest_releases {
   background-color: #231f20;
   padding: 64px 0px 0px 0px;
@@ -112,12 +92,31 @@ margin: 0px 48px 0px 32px;
   margin: 0px 0px 32px 32px;
 }
 
-.content_text {
-  text-align: justify;
-  color: #231f20;
-  font-size: 16px;
-  font-weight: regular;
-  margin: 32px 0px 32px 0px;
+.latest_releases_box {
+  display: flex;
+}
+
+.latest_releases_box div {
+  flex-basis: 0;
+  flex-grow: 4;
+}
+
+.hover_change {
+  position: relative;
+}
+
+.hover_change:hover .content_hover_change {
+  opacity: 1;
+}
+
+.content_hover_change {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left : 0;
+background-color: rgba(0,0,0.7);
+opacity: 0;
 }
 
 .slideshow_text {
@@ -181,6 +180,56 @@ a:hover {
 
 /**
 * ----------
-* Components
+* PRODUCT COMPONENTS
 * ----------
 */
+
+.product_content_box {
+  display: flex;
+  margin: 0px 0px 64px 0px;
+}
+
+.product_content_box div {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.product_content1{
+  text-align: justify;
+  color: #231f20;
+  font-size: 16px;
+  font-weight: regular;
+  margin: 0px 48px 32px 32px;
+}
+
+.product_picture1{
+  background-image: linear-gradient(#fcce00, transparent);
+  padding: 41px 16px 0px 0px;
+}
+
+.product_picture1 img{
+  mix-blend-mode: darken;
+}
+
+.product_content2{
+    color: #231f20;
+    font-size: 16px;
+    font-weight: regular;
+    margin: 0px 33px 32px 47px;
+}
+
+.product_picture2{
+  background-image: linear-gradient(#ff6b00, transparent);
+  padding: 16px 171px 0px 171px;
+  text-align: center;
+  max-width: 50%;
+}
+
+.product_picture2 img{
+  mix-blend-mode: darken;
+}
+
+.content_text {
+
+  margin: 0px 0px 32px 0px;
+}
