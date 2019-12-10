@@ -13,11 +13,19 @@ p, li, textarea, label, input, select {
   /* Default font size and line height */
 }
 
-h1 { 
-  font-size: 88px;
+h1, h2, h6 { 
   font-weight: 900;
   color: white;
   text-align: center;
+}
+
+h3, h4 {
+  color: #231f20;
+  text-align: center;
+}
+
+h1 { 
+  font-size: 88px;
   background-color: #fcce00;
   margin: 8px 0px 8px 0px;
   padding: 0 0px 5px 0px;
@@ -25,27 +33,21 @@ h1 {
 
 h2 { 
   font-size: 38px;
-  font-weight: 900;
-  color: white;
-  text-align: center;
   background-color: #ff6b00;
   margin: 8px 0px 8px 0px;
   padding: 16px 0px 15px 0px;
 }
 
+
 h3 { 
-    color: #231f20;
     font-size: 40px;
     font-weight: 900;
-    text-align: center;
     margin: 64px 0px 64px 0px;
   }
 
 h4 {
-    color: #231f20;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
     margin: 0px 0px 32px 0px;
 }
 
@@ -57,17 +59,25 @@ h5 {
 }
 
 h6 {
-  color: white;
   font-size: 40px;
-  font-weight: 900;
-  text-align: center;
-  margin: 0px 0px 64px 0px;
+}
+
+.learn_more_yellow, .learn_more_white {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .learn_more_yellow {
-  font-size: 20px;
-  font-weight: bold;
   color: #fcce00;
+}
+
+.learn_more_white {
+  color: white;
+  margin: 0px 0px 0px 60px;
+}
+
+.product_content_text {
+  margin: 0px 0px 32px 0px;
 }
 
 .slideshow_text {
@@ -77,74 +87,34 @@ h6 {
   margin: 0px 0px 32px 60px;
 }
 
-.learn_more_white {
-  font-size: 20px;
-  font-weight: bold;
+.game_programe, .latest_releases_text {
+  font-weight: regular;
+  text-align: center;
   color: white;
-  margin: 0px 0px 0px 60px;
-}
-
-.rectangle_latest_releases {
-  background-color: #231f20;
-  padding: 64px 0px 0px 0px;
-}
-
-.gallery_pics {
-  margin: 0px 0px 32px 32px;
-}
-
-.latest_releases_box {
-  display: flex;
-}
-
-.latest_releases_box div {
-  flex-basis: 0;
-  flex-grow: 4;
-}
-
-.hover_change {
-  position: relative;
-}
-
-.hover_change:hover .content_hover_change {
-  opacity: 1;
-}
-
-.content_hover_change {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left : 0;
-background-color: rgba(0,0,0.7);
-opacity: 0;
 }
 
 .game_programe {
-  text-align: center;
   font-size: 14px;
-  font-weight: regular;
-  color: white;
-}
-
-.warlords {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #fcce00;
+  margin : 16px 0px 8px 0px 
 }
 
 .latest_releases_text {
-  text-align: center;
-  color: white;
   font-size: 16px;
-  font-weight: regular;
+  margin : 0px 20px 0px 20px 
+}
+
+.warlords, .basic_programming {
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  margin : 0px 0px 32px 0px 
+}
+
+.warlords {
+  color: #fcce00;
 }
 
 .basic_programming {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
   color: #ff6b00;
 }
 
@@ -196,45 +166,40 @@ a:hover {
   flex-grow: 1;
 }
 
-.product_content1, .product_content2, {
+.product_content1, .product_content2 {
   color: #231f20;
   font-weight: regular;
+  font-size: 16px;
 }
 
 .product_content1 {
   text-align: justify;
   margin: 0px 48px 32px 32px;
-  font-size: 16px;
 }
 
-.product_picture1{
+.product_picture1 {
   background-image: linear-gradient(#fcce00, transparent);
   padding: 41px 16px 0px 0px;
 }
 
-.product_picture1, .product_picture2, img{
+.product_picture1, .product_picture2, img {
   mix-blend-mode: darken;
 }
 
-.product_content2{
+.product_content2 {
     margin: 0px 33px 32px 47px;
-    font-size: 16px;
 }
 
-.product_picture2{
+.product_picture2 {
   background-image: linear-gradient(#ff6b00, transparent);
   padding: 16px 171px 0px 171px;
   text-align: center;
   max-width: 50%;
 }
 
-.content_text {
-  margin: 0px 0px 32px 0px;
-}
-
 /**
 * ----------
-* ADVANCED FEATURES COMPONENTS
+* ADVANCE FEATURES COMPONENTS
 * ----------
 */
 
@@ -256,7 +221,7 @@ a:hover {
   flex-grow: 1;
 }
 
-.advance_features_picture1{
+.advance_features_picture1 {
   padding: 18px 0px 46px 0px;
 }
 
@@ -264,10 +229,65 @@ a:hover {
   background-image: linear-gradient(#b620e0, transparent);
 }
 
-.advance_features_picture2-3{
+.advance_features_picture2-3 {
   padding: 29px 0px 29px 0px;
 }
 
 .advance_features_box3 {
   background-image: linear-gradient(#6236ff, transparent);
+}
+
+/**
+* ----------
+* LATEST RELEASES COMPONENTS
+* ----------
+*/
+
+.big_box, .contact_box {
+  display: flex;
+  padding: 64px 0px 0px 34px;
+  background-color: #231f20;
+}
+
+.big_box img {
+  mix-blend-mode: unset;
+}
+
+.releases_gallery_box {
+  margin: 0px 32px 0px 0px;
+  max-width: 25%;
+  position: relative;
+}
+
+.title_big_box {
+  margin: auto;
+}
+
+.text_gallery_box { 
+  position: absolute;
+  top : 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(35,31,32,0.7);
+  border-radius: 15px
+}
+
+.text_gallery_box:hover {
+  opacity: 1;
+}
+
+/**
+* ----------
+* CONTACT COMPONENTS
+* ----------
+*/
+
+.contact_box {
+  flex-direction: column;
+}
+
+.contact_box div {
+  flex-basis: 0;
+  flex-grow: 1;
 }
